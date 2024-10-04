@@ -1,0 +1,37 @@
+# base
+dir: tmp
+seed: 0
+log_wandb: online
+log_interval: 10
+log_interval_ste: 100
+
+# data
+data: usps_mnist
+num_classes: 10
+trans_type: color_32
+
+# model
+model: mlp
+bias: True
+model_a: mnist
+model_b: usps
+a_v: 4
+b_v: 4
+a_epoch: 100
+b_epoch: 100
+
+# train
+batch_size: 500
+epoch: 100
+opt: sgd
+weight_decay: 1e-4
+lr: 0.5
+warmup_epoch: 0
+train_data_type: data_cond
+epoch_dc: 200
+batch_size_dc: 500
+opt_dc: sgd
+lr_dc: 0.01
+ipc: 1
+cond_a: data/DatasetCondensation/mlp/color_32/res_DC_MNIST_color32_MLP_1ipc.pt
+cond_b: data/DatasetCondensation/mlp/color_32/res_DC_USPS_color32_MLP_1ipc.pt

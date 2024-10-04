@@ -1,0 +1,26 @@
+# https://github.com/KellerJordan/REPAIR/blob/master/notebooks/Train-and-Permute-CIFAR10-ResNet20.ipynb
+# base
+dir: tmp
+seed: 0
+log_wandb: online
+log_interval: 5
+
+# data
+data: cifar10
+num_classes: 10
+
+# model
+model: resnet20
+width_multiplier: 16
+amp: True
+
+# train
+batch_size: 500
+epoch: 100
+
+# opt
+opt: sgd
+lr: 0.4
+weight_decay: 5e-4
+lr_schedule: linear_up_down
+warmup_epoch: 5

@@ -1,0 +1,32 @@
+# base
+dir: tmp
+seed: 0
+log_wandb: online
+log_interval: 10
+log_interval_ste: 100
+log_up_model: True
+
+# data
+data: mnist_rotated_mnist_45
+num_classes: 10
+
+# model
+model: mlp
+bias: True
+model_a: mnist
+model_b: rotated_mnist_45
+a_v: 1
+b_v: 0
+a_epoch: 100
+b_epoch: 100
+
+# train
+batch_size: 500
+epoch: 5
+opt: sgd
+weight_decay: 1e-4
+lr: 0.1
+warmup_epoch: 0
+train_data_type: full
+repair: False
+

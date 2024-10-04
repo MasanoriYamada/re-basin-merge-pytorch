@@ -1,0 +1,23 @@
+# base
+dir: tmp
+seed: 0
+log_wandb: online
+
+# data
+data: cifar10
+num_classes: 10
+
+# model
+model: resnet20
+width_multiplier: 16
+model_a: cifar10
+model_b: cifar10
+a_v: 4
+b_v: 5
+a_epoch: 100
+b_epoch: 100
+amp: True
+
+# eval
+batch_size: 100
+repair: True

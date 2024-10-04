@@ -1,0 +1,31 @@
+# base
+dir: tmp
+seed: 0
+log_wandb: online
+log_interval: 10
+log_interval_ste: 100
+
+# data
+data: usps_mnist
+num_classes: 10
+trans_type: color_32
+
+# model
+model: mlp
+bias: True
+model_a: usps
+model_b: mnist
+a_v: 4
+b_v: 5
+a_epoch: 100
+b_epoch: 100
+
+# train
+batch_size: 500
+epoch: 100
+opt: sgd
+weight_decay: 1e-4
+lr: 0.5
+warmup_epoch: 0
+train_data_type: full
+

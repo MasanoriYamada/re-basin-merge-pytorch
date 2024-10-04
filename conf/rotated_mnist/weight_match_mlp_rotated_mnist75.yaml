@@ -1,0 +1,22 @@
+# base
+dir: tmp
+seed: 0
+log_wandb: online
+
+# data
+data: mnist_rotated_mnist_75
+num_classes: 10
+
+# model
+model: mlp
+bias: True
+model_a: mnist
+model_b: rotated_mnist_75
+a_v: 1
+b_v: 0
+a_epoch: 100
+b_epoch: 100
+
+
+# train
+batch_size: 500

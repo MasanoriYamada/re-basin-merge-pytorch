@@ -1,0 +1,11 @@
+,1801
+architecture,ConvNet
+dataset,cifar10
+ssize,100
+zca,False
+l,False
+aug,False
+ckpt,25500
+test_acc,0.6190000176429749
+test_mse,0.0305026303976774
+URL,https://storage.cloud.google.com/kip-datasets/kip/cifar10/ConvNet_ssize100_nozca_nol_noaug_ckpt25500.npz

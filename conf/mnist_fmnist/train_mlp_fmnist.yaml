@@ -1,0 +1,23 @@
+# base
+dir: tmp
+seed: 0
+log_wandb: online
+log_interval: 5
+log_up_model: True
+
+# data
+data: fmnist
+num_classes: 10
+
+# model
+model: mlp
+bias: True
+
+# train
+batch_size: 500
+epoch: 100
+
+# opt
+opt: sgd
+lr: 0.1
+weight_decay: 0.0
